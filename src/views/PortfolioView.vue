@@ -38,7 +38,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
 interface Project {
   title: string
   description: string
-  image: string
+  images: string[]
   stack: string[]
   link: string
   linkText?: string
@@ -48,7 +48,12 @@ const projects: Project[] = [
   {
     title: 'Eventizate',
     description: 'Plataforma web para crear invitaciones digitales personalizadas para cumpleaños, bodas y eventos sociales. Permite diseñar y compartir invitaciones interactivas con funcionalidades como confirmación de asistencia, cuenta regresiva y galerías multimedia.',
-    image: 'https://placehold.co/600x400?text=Eventizate',
+    images: [
+      'https://dl.dropboxusercontent.com/scl/fi/uvmpyu0maf6b59z4c7uk1/imagenEventizate1.jpg?rlkey=9phuw09gk7a1lvuzvz4d4u6ef&st=zyevlx6j',
+      'https://dl.dropboxusercontent.com/scl/fi/9bj6hik2gylrqxuo8kjy9/imagenEventizate2.jpg?rlkey=1srgt3owic8nomogqb0k1x7f0&st=0no5fm9m',
+      'https://dl.dropboxusercontent.com/scl/fi/au77f16urcmq3hnu20nrs/imagenEventizate3.jpg?rlkey=zakm18zajy3fc9381ns3toa26&st=o24ii7dk',
+      'https://dl.dropboxusercontent.com/scl/fi/3v532uxoukgyoz9xpb18c/imagenEventizate4.jpg?rlkey=p56ubxvy01o4d24qpprnrxqdc&st=je2bd0b5'
+    ],
     stack: ['Vue 3', 'Firebase', 'Tailwind CSS', 'TypeScript'],
     link: 'https://eventizate.mtproducciones.com.ar/',
     linkText: 'Ver Proyecto'
@@ -56,12 +61,19 @@ const projects: Project[] = [
   {
     title: 'UDEC-Freyre',
     description: 'Sistema desarrollado con Laravel para la gestión de cursos, talleres y programas de la municipalidad de Freyre. Incluye módulos para administración, registro de docentes y alumnos.',
-    image: 'https://placehold.co/600x400?text=UDEC-Freyre',
+    images: [
+      'https://dl.dropboxusercontent.com/scl/fi/afmtezzuqk7us8xjk78lo/udec1.jpg?rlkey=1uluqdc85q1u6j06attiohayg&st=wr9szyp7',
+      'https://dl.dropboxusercontent.com/scl/fi/vvpx9rm71qdta8jaq8b36/udec2.jpg?rlkey=ro3kehklatuow5h42914fq3pp&st=typachy2',
+      'https://dl.dropboxusercontent.com/scl/fi/vvpx9rm71qdta8jaq8b36/udec2.jpg?rlkey=ro3kehklatuow5h42914fq3pp&st=typachy2', // repetido, podés omitirlo si querés
+      'https://dl.dropboxusercontent.com/scl/fi/0hxrczji5haefhexk18jb/udec4.jpg?rlkey=n71472tbra5myn0rz4puz1t9g&st=srcl5dzf'
+    ]
+,
     stack: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
     link: 'https://github.com/maurytrossero/udec-freyre',
     linkText: 'Ver Código en GitHub'
   }
 ]
+
 </script>
 
 <style scoped>
