@@ -71,7 +71,19 @@ const projects: Project[] = [
     stack: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
     link: 'https://github.com/maurytrossero/udec-freyre',
     linkText: 'Ver Código en GitHub'
+  },
+  {
+    title: 'Course Platform',
+    description: 'Aplicación web educativa que permite crear, editar y administrar clases con recursos multimedia, niveles y categorías. Desarrollado con Vue 3, Laravel, Inertia.js y Tailwind CSS. Incluye formularios reutilizables, validación backend y diseño responsivo.',
+    images: [
+      'https://dl.dropboxusercontent.com/scl/fi/82vv5o76zqjef6atjte1g/course-platform.jpg?rlkey=5pp1000i5k7muwyegx97k1wo5', // reemplazar con imágenes reales
+      'https://dl.dropboxusercontent.com/scl/fi/82vv5o76zqjef6atjte1g/course-platform.jpg?rlkey=5pp1000i5k7muwyegx97k1wo5'
+    ],
+    stack: ['Vue 3', 'Laravel', 'Inertia.js', 'Tailwind CSS', 'MySQL'],
+    link: 'https://github.com/maurytrossero/course-platform',
+    linkText: 'Ver Código en GitHub'
   }
+
 ]
 
 </script>
