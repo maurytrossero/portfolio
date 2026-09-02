@@ -201,4 +201,36 @@ const projects: Project[] = [
     border: 1px solid rgba(59, 130, 246, 0.3); /* Borde sutil */
   }
 }
+
+/* 📱 AJUSTES MOBILE */
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 2rem 1rem; /* Reduce el padding lateral y superior/inferior */
+  }
+
+  .portfolio-title {
+    font-size: 1.6rem; /* Evita que el título se rompa en varias líneas de forma incómoda */
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-icon {
+    font-size: 1.5rem; /* Ajusta el tamaño del emoji */
+  }
+
+  .portfolio-intro {
+    font-size: 0.95rem; /* Texto más pequeño y legible en mobile */
+    line-height: 1.5; /* Interlineado más compacto */
+    margin-bottom: 2rem; 
+  }
+
+  .cv-download {
+    margin-bottom: 2.5rem; /* Acorta la distancia exagerada hacia los proyectos */
+  }
+
+  .btn-cv {
+    width: 100%; /* El botón ocupa todo el ancho, mejorando el área táctil (UX) */
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
 </style>

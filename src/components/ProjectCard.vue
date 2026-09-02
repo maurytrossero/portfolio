@@ -182,5 +182,29 @@ onUnmounted(() => {
     background-color: #1f2937;
   }  
 }
+/* 📱 AJUSTES MOBILE */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 160px; /* Reduce ligeramente la altura de la imagen para dar espacio al texto */
+  }
 
+  .card-content {
+    padding: 0.875rem; /* Reduce los márgenes internos de la tarjeta */
+    gap: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem; /* Título más compacto */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Reduce el tamaño del párrafo descriptivo */
+    line-height: 1.4;
+  }
+
+  .stack-item {
+    font-size: 0.7rem; /* Ajusta las etiquetas (tags) para que entren más en una sola línea */
+    padding: 0.2rem 0.4rem;
+  }
+}
 </style>
