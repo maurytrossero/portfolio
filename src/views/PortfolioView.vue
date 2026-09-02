@@ -129,15 +129,16 @@ const projects: Project[] = [
 }
 
 .portfolio-intro {
-  font-size: 1.125rem;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  color: #4b5563; /* Un gris un poco más suave */
-  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: 650px; /* Reduce el ancho para acortar las líneas */
+  line-height: 1.7; /* Aumenta el espacio entre líneas */
+  margin: 0 auto 2.5rem auto; /* Más espacio abajo (2.5rem) */
+  color: #94a3b8; /* Un gris apenas más claro para modo oscuro */
 }
 
+/* Ajuste para separar el botón de las tarjetas */
 .cv-download {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem; /* Dale bastante aire antes de los proyectos */
 }
 
 .btn-cv {
@@ -193,6 +194,11 @@ const projects: Project[] = [
 
   .btn-cv:hover {
     background-color: #2563eb;
+  }
+  .stack-item {
+    background-color: rgba(59, 130, 246, 0.15); /* Fondo azul semitransparente */
+    color: #93c5fd; /* Texto celeste claro */
+    border: 1px solid rgba(59, 130, 246, 0.3); /* Borde sutil */
   }
 }
 </style>
